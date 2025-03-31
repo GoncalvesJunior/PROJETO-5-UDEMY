@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Boldonse&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-title: "Italiana", sans-serif;
+    --font-text: "Roboto", sans-serif;
+    --font-nav-footer: "Boldonse", system-ui;
+    --color-mainly-text: #585858;
+    
+}
+
+body{
+    background-color:white;
+    margin: 0;
+    min-height: 100%;    
+    
+}
+
+header{
+    display: flex;
+    background-color:#162028;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 20px;
+    align-items: center;
+    
+}
+
+header h1{
+    color:white;
+    font-family: var(--font-title);
+    margin-left:150px;
+    
+}
+
+header ul{
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    
+    font-family: var(--font-nav-footer);
+    gap: 60px;
+    
+}
+
+ul li{
+    letter-spacing: 8px;
+    font-size: .6em;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #425564;
+    padding: 2px;
+}
+
+ul li a:hover{
+    color: white;
+    transition: .3s;
+}
+
+.topo_image{
+    width: 100%;
+    
+    background-position: fixed;
+}
+
+main{
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    max-width: 75%;
+}
+
+.mainly_text {
+    color: var(--color-mainly-text);
+}
+
+.mainly_text h2{
+    font-family: var(--font-title);
+    font-size: 2.6em;
+    margin-top: 110px;
+
+}
+
+.mainly_text p{
+    font-family: var(--font-text);
+    margin: 80px 0;
+    font-size: 1.4em;
+    line-height: 2em;
+}
+
+.models_jacket{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.models_jacket div{
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.models_jacket div h3{
+    font-family: var(--font-text);
+    color:var(--color-mainly-text);
+    font-weight: bolder;
+    font-size: 1.2em;
+    letter-spacing: 4px;
+}
+
+.models_jacket div p{
+    color: var(--color-mainly-text);
+    font-family: var(--font-text);
+}
+
+.models_jacket div img{
+    width: 100%;
+    
+}
+
+.last_section{
+    background: url(../imagens/bg_detalhe.png) no-repeat;
+    background-size: cover;    
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    min-height: 100vh;
+    
+    
+}
+
+.text_block{
+    padding: 15% 5%;
+    
+}
+
+.text_block h2{
+    text-align: left;
+    font-family: var(--font-title);
+    font-size: 4em;
+
+}
+
+.text_block p{
+    text-align: left;
+    font-family: var(--font-text);
+    font-size: 1.5em;
+    line-height: 2em;
+    max-width: 64%
+}
+
+footer{
+    background-color: #0b171f;
+    height: 70px;
+    
+
+}
+
+footer p{
+    letter-spacing: .4em;
+    text-align: center;
+    margin: 0;
+    color: #425564;
+    padding-top: 25px;
+    font-size: .6em;
+    font-family: var(--font-nav-footer);
+    letter-spacing: .9em;
+}
